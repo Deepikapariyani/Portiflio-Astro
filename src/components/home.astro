@@ -1,0 +1,71 @@
+---
+import image from "/Deepika.jpg";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <div
+      class="xl:tw-px-20 2xl:tw-px-20 tw-px-10 tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 xl:tw-grid-cols-2 2xl:tw-grid-cols-2"
+    >
+      <div class="tw-flex tw-h-full tw-gap-x-16">
+        <div
+          class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-10"
+        >
+          <div>1</div>
+          <div>1</div>
+          <div>1</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-6 tw-justify-center">
+          <div class="tw-text-2xl xl:tw-text-3xl 2xl:tw-text:4xl tw-font-bold">
+            Hi, I am Deepika
+          </div>
+          <div
+            class="tw-text-xl xl:tw-text-2xl 2xl:tw-text:3xl tw-font-semibold"
+          >
+            FullStack Developer
+          </div>
+          <div
+            class="tw-text-sm tw-text-[#4b5563] tw-font-medium xl:tw-text-lg 2xl:tw-text:md"
+          >
+            A Passionate FullStack Developer on a mission to craft extraordinary
+            digital experience that leaves user spellbound.
+          </div>
+        </div>
+      </div>
+
+      <div class="tw-flex tw-justify-center tw-py-6 2xl:tw-py-0 xl:tw-py-0">
+        <div class="blob">
+          <!-- <img src="{image}" alt="" /> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+  .blob {
+    background-image: url("../../public/Deepika.jpg");
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 5px 10px 10px 10px rgba(4, 71, 172, 0.117);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 3s ease-in-out;
+  }
+  @keyframes animate {
+    0%,
+    100% {
+      border-radius: 50% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+  }
+</style>

@@ -3,13 +3,30 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   prefix: "tw-",
   theme: {
-	colors: {
-		'primary':'#8860d0',
-		'secondry': '#5680e9',
-		'tertiary': '#5ab9ea',
-		'quaternary': '#84ceeb',
-		'quinary': '#c1c8ea',
-	  },
+    screens: {
+      xs: "400px",
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1000px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1280px",
+      // => @media (min-width: 1280px) { ... }
+
+      "2xl": "1536px",
+      // => @media (min-width: 1536px) { ... }
+    },
+    colors: {
+      primary: "#8860d0",
+      secondry: "#5680e9",
+      tertiary: "#5ab9ea",
+      quaternary: "#84ceeb",
+      quinary: "#c1c8ea",
+    },
     extend: {},
   },
   plugins: [],
