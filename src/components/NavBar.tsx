@@ -41,7 +41,7 @@ export default function Nav() {
             variants={navMotion}
             animate="visible"
             initial="hidden"
-            className="tw-flex tw-gap-10 tw-text-[#4b5563] tw-font-semibold tw-text-xl"
+            className="tw-flex tw-gap-10 tw-text-app_text_light tw-font-semibold tw-text-xl"
           >
             <motion.a variants={itemMotion} href="/">
               Home

@@ -26,6 +26,8 @@ export default {
       tertiary: "#5ab9ea",
       quaternary: "#84ceeb",
       quinary: "#c1c8ea",
+      app_text_dark: "#4b5563",
+      app_text_light: "#4b5563",
     },
     extend: {},
   },
