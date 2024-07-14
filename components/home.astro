@@ -1,0 +1,190 @@
+---
+import image from "/Deepika.jpg";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <div
+      class="tw-my-10 xl:tw-px-20 2xl:tw-px-20 tw-px-10 tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-2 xl:tw-grid-cols-2 2xl:tw-grid-cols-2"
+    >
+      <div class="tw-flex tw-h-full tw-gap-x-16">
+        <div
+          class="tw-flex tw-text-secondry tw-flex-col tw-items-center tw-justify-center tw-gap-10"
+        >
+          <div><i class="fa-brands tw-cursor-pointer fa-linkedin-in"></i></div>
+          <div><i class="fa-brands fa-github-alt tw-cursor-pointer"></i></div>
+          <!-- <div>1</div> -->
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-6 tw-justify-center">
+          <div class="tw-flex tw-pt-10">
+            <!-- <span
+            class="tw-text-base tw-text-app_text_light tw-font-medium xl:tw-text-lg 2xl:tw-text:md"
+          >
+           I'm
+          </span> -->
+            <span
+              class="tw-text-app_text_dark tw-text-3xl xl:tw-text-4xl 2xl:tw-text:5xl tw-font-bold"
+            >
+              Hi, I'm Deepika
+            </span>
+          </div>
+          <div
+            class="tw-text-app_text_dark tw-text-xl xl:tw-text-2xl 2xl:tw-text:3xl tw-font-semibold"
+          >
+            FullStack Developer
+          </div>
+          <div
+            class="tw-text-lg tw-text-app_text_light tw-font-medium xl:tw-text-lg 2xl:tw-text:xl"
+          >
+            <!-- A Passionate FullStack Developer on a mission to craft extraordinary
+            digital experience that leaves user spellbound. -->
+
+             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+            dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+            nec, pellentesque eu, pretium quis, sem.
+          </div>
+          <div class="tw-flex tw-pt-4 tw-items-center">
+            <div class="">
+              <button
+                id="button"
+                type="submit"
+                class="tw-border-solid tw-bg-inherit tw-border-2 tw-border-primary tw-shadow-2xl tw-text-sm xl:tw-text-lg 2xl:tw-text:md tw-text-white tw-font-bold tw-rounded-xl tw-p-3 xl:tw-w-48 2xl:tw-w-48"
+                >Contact Me</button
+              >
+            </div>
+            <div class="tw-px-8">
+              <a
+                href="#"
+                class="button-container button-wiggle tw-bg-inherit tw-text-primary"
+                >Click here to know more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="t tw-justify-center tw-py-6 2xl:tw-py-0 xl:tw-py-0 tw-hidden md:tw-flex lg:tw-flex xl:tw-flex 2xl:tw-flex"
+      >
+        <div class="blob tw-w-[23rem] tw-h-[20rem]">
+          <!-- <img src="{image}" alt="" /> -->
+        </div>
+      </div>
+    </div>
+    <div class="xl:tw-px-20 2xl:tw-px-20 tw-pt-16">
+      <div class="tw-pt-10">
+        <div
+          class="tw-text-app_text_dark tw-text-3xl xl:tw-text-4xl 2xl:tw-text:5xl tw-font-bold"
+        >
+          Skills
+        </div>
+      </div>
+      <div
+        class="tw-text-base tw-text-app_text_light tw-font-medium xl:tw-text-lg 2xl:tw-text:md tw-my-5"
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu, pretium quis, sem.
+      </div>
+      <div class="tw-pt-4">
+        <button
+          id="button"
+          type="submit"
+          class="tw-bg-secondry tw-shadow-2xl hover:tw-bg-secondry tw-text-sm xl:tw-text-lg 2xl:tw-text:md tw-text-white tw-font-bold tw-rounded-xl tw-p-3 xl:tw-w-48 2xl:tw-w-48"
+          >Download CV</button
+        >
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+  .blob {
+    background-image: url("../../public/Deepika.jpg");
+
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.089);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 3s ease-in-out;
+  }
+  @keyframes animate {
+    0%,
+    100% {
+      border-radius: 50% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+  }
+  /* ---------------------------- */
+  // GENERAL STYLES
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: linear-gradient(36deg, rgba(21, 32, 58, 0.863), #000a29);
+  }
+
+  .button-container {
+    text-decoration: none;
+    display: inline-block;
+
+    letter-spacing: 1px;
+    box-shadow: 0 2px 5px 0 rgba(3, 6, 26, 0.15);
+    transition: 0.5s all ease-in-out;
+    &:hover {
+      cursor: pointer;
+      background: white;
+      animation: none;
+      //animation-play-state: paused;
+    }
+  }
+
+  .button {
+  }
+
+  .button-wiggle {
+    animation: wiggle 4s 2s infinite;
+  }
+
+  @keyframes wiggle {
+    5%,
+    50% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    15% {
+      transform: scale(1.15);
+    }
+    20% {
+      transform: scale(1.15) rotate(-5deg);
+    }
+    25% {
+      transform: scale(1.15) rotate(5deg);
+    }
+    30% {
+      transform: scale(1.15) rotate(-3deg);
+    }
+    35% {
+      transform: scale(1.15) rotate(2deg);
+    }
+    40% {
+      transform: scale(1.15) rotate(0);
+    }
+  }
+</style>
