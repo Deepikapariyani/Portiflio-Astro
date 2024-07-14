@@ -24,12 +24,12 @@ export default function Nav() {
     hidden: { opacity: 0, x: -20 },
   };
   return (
-    <nav className="relative tw-items-center tw-mx-8 tw-mb-20 tw-pt-10 tw-flex tw-justify-between md:tw-mx-16 lg:tw-mx-32">
+    <nav className="relative tw-items-center tw-mx-8 tw-mb-24 tw-pt-10 tw-flex tw-justify-between md:tw-mx-16 lg:tw-mx-32">
       <motion.div
         variants={navMotion}
         animate="visible"
         initial="hidden"
-        className="tw-font-semibold tw-text-2xl xl:tw-text-4xl  2xl:tw-text:4xl tw-text-primary"
+        className="tw-font-semibold tw-text-2xl xl:tw-text-4xl  2xl:tw-text:4xl tw-text-secondry"
       >
         <motion.a variants={itemMotion} href="/">
           Deepika
