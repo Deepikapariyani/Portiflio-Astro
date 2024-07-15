@@ -1,5 +1,6 @@
 ---
 import image from "/Deepika.jpg";
+import Skills from "../components/Skills";
 ---
 
 <!doctype html>
@@ -46,10 +47,10 @@ import image from "/Deepika.jpg";
             <!-- A Passionate FullStack Developer on a mission to craft extraordinary
             digital experience that leaves user spellbound. -->
 
-             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-            dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
-            nec, pellentesque eu, pretium quis, sem.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
           </div>
           <div class="tw-flex tw-pt-4 tw-items-center tw-justify-between">
             <div class="">
@@ -67,11 +68,25 @@ import image from "/Deepika.jpg";
                 >Click here to know more</a
               >
             </div> -->
-            <div class="container_mouse">
+            <!-- <div class="container_mouse">
               <span class="mouse-btn">
                 <span class="mouse-scroll"></span>
               </span>
               <span>Scroll Down</span>
+            </div> -->
+            <div>
+              <div
+                class="xl:tw-absolute 2xl:tw-absolute"
+                style="width: 1em; height: 1em; background-color: transparent; z-index: 80; 
+            bottom: 25px;  border-width: 0 0.19em 0.19em 0; border-style: solid; border-color: rgb(255, 255, 255); animation: scrolldown 1.8s ease-in-out infinite 0.15s;"
+              >
+              </div>
+              <div
+                class="xl:tw-absolute 2xl:tw-absolute"
+                style="width: 1em; height: 1em; background-color: transparent; z-index: 80; 
+            bottom: 40px;  border-width: 0 0.1em 0.1em 0; border-style: solid; border-color: rgb(255, 255, 255); animation: scrolldown 1.8s ease-in-out infinite;"
+              >
+              </div>
             </div>
           </div>
         </div>
@@ -86,33 +101,18 @@ import image from "/Deepika.jpg";
       </div>
     </div>
 
-    <div class="xl:tw-px-20 2xl:tw-px-20 tw-pt-16">
-      <div class="tw-pt-10">
-        <div
-          class="tw-text-app_text_dark tw-text-3xl xl:tw-text-4xl 2xl:tw-text:5xl tw-font-bold"
-        >
-          Skills
-        </div>
-      </div>
-      <div
-        class="tw-text-base tw-text-app_text_light tw-font-medium xl:tw-text-lg 2xl:tw-text:md tw-my-5"
-      >
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-        ultricies nec, pellentesque eu, pretium quis, sem.
-      </div>
-      <div class="tw-pt-4">
+    <Skills client:load />
+    <!-- <div class="tw-pt-4">
         <button
           id="button"
           type="submit"
           class="tw-bg-secondry tw-shadow-2xl hover:tw-bg-secondry tw-text-sm xl:tw-text-lg 2xl:tw-text:md tw-text-white tw-font-bold tw-rounded-xl tw-p-3 xl:tw-w-48 2xl:tw-w-48"
           >Download CV</button
         >
-      </div>
-    </div>
+      </div> -->
   </body>
 </html>
+<script></script>
 <style>
   .blob {
     background-image: url("../../public/Deepika.jpg");
@@ -142,7 +142,7 @@ import image from "/Deepika.jpg";
   }
 
   body {
-    background: linear-gradient(36deg, rgba(21, 32, 58, 0.863), #000a29);
+    background: linear-gradient(36deg, rgba(0, 0, 0, 0.863), #00002d);
   }
 
   .button-container {
@@ -150,7 +150,7 @@ import image from "/Deepika.jpg";
     display: inline-block;
 
     letter-spacing: 1px;
-    box-shadow: 0 2px 5px 0 rgba(3, 6, 26, 0.15);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     transition: 0.5s all ease-in-out;
     &:hover {
       cursor: pointer;
@@ -165,6 +165,21 @@ import image from "/Deepika.jpg";
 
   .button-wiggle {
     animation: wiggle 4s 2s infinite;
+  }
+
+  @keyframes scrolldown {
+    0% {
+      transform: translateY(20%) rotate(45deg);
+      opacity: 0.7;
+    }
+    50% {
+      transform: translateY(0%) rotate(45deg);
+      opacity: 0.2;
+    }
+    100% {
+      transform: translateY(20%) rotate(45deg);
+      opacity: 0.7;
+    }
   }
 
   @keyframes wiggle {
